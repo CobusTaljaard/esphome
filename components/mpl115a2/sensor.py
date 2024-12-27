@@ -25,7 +25,7 @@ CONFIG_SCHEMA = (
         {
             cv.GenerateID(): cv.declare_id(MPL115A2Component),
             cv.Optional(CONF_PRESSURE): sensor.sensor_schema(
-                unit_of_measurement=UNIT_KILOPASCAL,
+                unit_of_measurement=UNIT_KPA,
                 accuracy_decimals=1,
                 device_class=DEVICE_CLASS_PRESSURE,
                 state_class=STATE_CLASS_MEASUREMENT,
